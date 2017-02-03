@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+	<head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	</head>
+
+
+	<body>
+        <news-header></news-header>
+        <!-- main content -->
+        <ng-view></ng-view>
+
+        <news-footer></news-footer>
+
+        <!-- js/vendor -->
+        
+		<script type="text/javascript" src="js/vendor/angular.min.js"   ></script>
+        <script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js" ></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="js/vendor/routes.js"        ></script>
+        
+
+        <!-- root -->
+        
+        <script type="text/javascript" src="app.config.js"  ></script>
+        <script type="text/javascript" src="app.module.js"  ></script>
+        <script type="text/javascript" src="app.js"         ></script>
+
+        <!-- templates/footer -->
+        <script type="text/javascript" src="templates/footer/footer.controller.js"></script>
+        <script type="text/javascript" src="templates/header/header.controller.js"></script>
+
+	</body>
+
+</html>
